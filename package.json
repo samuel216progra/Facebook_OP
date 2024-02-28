@@ -4,10 +4,11 @@
   "description": "Este sistema tiene como objetivo crear un sistema de gestión de opiniones similar a las publicaciones de Facebook, con funcionalidades específicas centradas en la interacción y expresión de opiniones por parte de los usuarios.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Samuel  Rodriguez",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
