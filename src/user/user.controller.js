@@ -10,6 +10,7 @@ export const getUsers = async (req = request, res = response) => {
         User.countDocuments(query),
         User.find(query)
             .skip(Number(desde))
+
             .limit(Number(limite))
     ]);
 
@@ -43,6 +44,7 @@ export const updateUser = async (req, res = response) => {
         if (!user) {
             return res.status(404).json({
                 msg: "user not found"
+
             });
         }
 
@@ -61,12 +63,14 @@ export const updateUser = async (req, res = response) => {
         }
 
 
+
         await User.findByIdAndUpdate(id, rest);
 
         const useru = await User.findOne({ _id: id });
 
         res.status(200).json({
             msg: 'Update User',
+            
             useru
         })
 
@@ -77,19 +81,5 @@ export const updateUser = async (req, res = response) => {
         })
     }
 
-    /*
-        if (newPassword) {
-            const salt = bcryptjs.genSaltSync();
-            rest.password = bcryptjs.hashSync(newPassword, salt);
-        }
-    
-        await User.findByIdAndUpdate(id, rest);
-    
-        const user = await User.findOne({ _id: id });
-    
-        res.status(200).json({
-            msg: 'Update User',
-            user
-        })*/
 
 }
