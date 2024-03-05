@@ -19,7 +19,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"emailOrUser\" : \"BraulioBR\",\n  \"password\" : \"123456\"\n}",
+                "raw": "{\n  \"emailOrUser\" : \"Brauliobr\",\n  \"password\" : \"123456\"\n}",
                 "form": []
             },
             "tests": []
