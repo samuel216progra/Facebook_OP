@@ -8,8 +8,8 @@ const router = Router();
 router.post(
     '/login',
     [
-        check('emailOrUser', 'Este no es un corre valido').not().isEmpty(),
-        check('password', 'El password es obligatorio').not().isEmpty(),
+        check('emailOrUser', 'This is not a valid email').not().isEmpty(),
+        check('password', 'The password is mandatory').not().isEmpty(),
         validarCampos
     ],
     login

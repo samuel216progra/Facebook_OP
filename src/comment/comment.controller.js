@@ -13,12 +13,12 @@ export const createComment = async (req, res) => {
         await comment.save();
 
         res.status(201).json({
-            msg: 'Commentary created',
+            msg: 'comment created successfully',
             comment
         })
 
     } catch (error) {
-        
+
         console.error(error);
         res.status(500).json({
             msg: 'Internal server error'
@@ -73,7 +73,7 @@ export const updateComment = async (req, res = response) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            msg: 'Hubo un error al actualizar la publicación'
+            msg: 'There was an error updating the post'
         });
     }
 }
@@ -108,7 +108,7 @@ export const deleteComment = async (req, res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            msg: 'Hubo un error al actualizar la publicación'
+            msg: 'There was an error updating the post'
         });
     }
 }

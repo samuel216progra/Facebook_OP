@@ -9,7 +9,7 @@ export const login = async (req, res) => {
         const user = await User.findOne({
 
 
-            
+
 
             $or: [
                 { email: emailOrUser },{ userName: emailOrUser }
@@ -45,13 +45,13 @@ export const login = async (req, res) => {
 
         res.status(200).json({
 
-            msg: 'Login Ok :D', user,token
+            msg: 'Welcome', user,token
             
         })
     } catch (e) {
         console.log(e);
         res.status(500).json({
-            msg: "Comuniquese con administrador :|"
+            msg: "Contact administrator"
         })
     }
 }

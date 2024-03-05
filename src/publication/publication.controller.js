@@ -98,22 +98,11 @@ export const updatePublications = async (req, res = response) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            msg: 'Hubo un error al actualizar la publicación'
+            msg: 'There was an error updating the post'
         });
     }
 };
 
-/*
-await Publication.findByIdAndUpdate(id, rest);
-
-const publication = await Publication.findOne({ _id: id });
-
-res.status(200).json({
-    msg: 'Publication update',
-    publication
-});*/
-
-//Delete
 
 export const deletePublication = async (req, res) => {
     const { id } = req.params;

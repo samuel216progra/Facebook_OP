@@ -38,7 +38,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"titule\" : \"Despiden profesor de colegio Guatemalteco\",\n  \"category\" : \"Academico\",\n  \"content\" : \"Se busca profesor de matetica que tenga valores\",\n  \"id_User\" : \"65e53e573c7a92eae247038a\"\n}",
+                "raw": "{\n  \"titule\" : \"What happened yesterday in Kinal?\",\n  \"category\" : \"Academico\",\n  \"content\" : \"no one knows, help\",\n  \"id_User\" : \"65e53e573c7a92eae247038a\"\n}",
                 "form": []
             },
             "tests": []

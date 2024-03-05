@@ -6,7 +6,7 @@ export const validarJWT = async (req, res, next) => {
 
     if (!token) {
         return res.status(401).json({
-            msg: "No hay token en la peticion"
+            msg: "There is no token in the request"
         });
     }
 
@@ -17,13 +17,13 @@ export const validarJWT = async (req, res, next) => {
 
         if (!user) {
             return res.status(401).json({
-                msg: 'Usuario no existe en la base de datos'
+                msg: 'User does not exist in the database'
             })
         }
 
         if (!user.state) {
             return res.status(401).json({
-                msg: 'Token no válido - usuario con estado : false '
+                msg: 'Invalid token - user with status: false '
             });
         }
 
@@ -33,7 +33,7 @@ export const validarJWT = async (req, res, next) => {
     } catch (e) {
         console.log(e);
         res.status(401).json({
-            msg: "Token no válido"
+            msg: "Invalid token"
         });
     }
 }

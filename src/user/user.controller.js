@@ -70,14 +70,14 @@ export const updateUser = async (req, res = response) => {
 
         res.status(200).json({
             msg: 'Update User',
-            
+
             useru
         })
 
     } catch (e) {
         console.error(e);
         res.status(500).json({
-            msg: "Error del server"
+            msg: "Error in the server"
         })
     }
 

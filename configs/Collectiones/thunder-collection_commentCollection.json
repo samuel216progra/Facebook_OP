@@ -24,7 +24,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"commentary\": \"Cuanto me pagaran?\",\n  \"postBy\": \"65e53eff3c7a92eae2470394\",\n  \"creatorBy\": \"65e53e713c7a92eae247038e\"\n}",
+                "raw": "{\n  \"commentary\": \"Que hago el dia de hoy\",\n  \"postBy\": \"65e53eff3c7a92eae2470394\",\n  \"creatorBy\": \"65e53e713c7a92eae247038e\"\n}",
                 "form": []
             },
             "tests": []
